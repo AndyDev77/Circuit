@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-black-150: 0 5px 15px rgba(0, 0, 0, 0.15);
+  --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --color-1: #ffab00;
+  --color-2: rgb(194, 4, 115);
+  --color-3: #787878;
+  --bg-dark: #2b2c2f;
+  --royal-purple-dark: #7d56c2;
+  --color-red: #da0f3f;
+  --color-red-light: hsl(346, 87%, 46%, 15%);
+  --color-green: #00c476;
+  --color-green-light: hsl(156, 100%, 38%, 15%);
+  --shadow-block-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-block-200: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --shadow-block-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --block-900: #000000;
+  --block-400: #555555;
+  --block-100: #f7f7f7;
+  --white: #ffffff;
+  --block-alpha-100: rgba(0, 0, 0, 0.05);
+  --block-alpha-150: rgba(0, 0, 0, 0.07);
+
+  /**
+     * typography
+     */
+
+  --ff-poppins: "Poppins", sans-serif;
+
+  --fs-1: 32px;
+  --fs-2: 26px;
+  --fs-3: 22px;
+  --fs-4: 18px;
+  --fs-5: 15px;
+  --fs-6: 14px;
+
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+
+  /**
+      * transition
+      */
+
+  --transition: 0.25s ease-in-out;
+}
+
+body {
+  font-family: var(--ff-poppins);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+i {
+  text-decoration: none;
+  list-style: none;
+}
+
+span {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Circuit*/
+
+.circuit {
+  position: relative;
+  min-height: 90vh;
+  background: linear-gradient(rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 0.3)),
+    url(../images/circuit.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  /* border-radius: 0 0 200px 0; */
+}
+
+.circuit .section-title h2 {
+  font-size: 60px;
+  color: var(--block-900);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.circuit .section-title h3 {
+  font-size: 18px;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.check-cont {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.check-cont div label {
+  cursor: pointer;
+}
+
+.check-cont div label input[type="checkbox"] {
+  display: none;
+}
+
+.check-cont div label span {
+  padding: 20px 6px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 2px solid var(--white);
+  color: var(--white);
+  margin-right: 20px;
+  transition: all 0.5s ease;
+}
+
+.check-cont div label span:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #FFAB00;
+}
+
+
+.btn-button{
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  background-color: var(--royal-purple-dark);
+  color: var(--white);
+  border-color: var(--royal-purple-dark);
+  margin: 50px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.btn-button:hover{
+  background-color: var(--white);
+  color: var(--royal-purple-dark);
+  cursor: pointer;
+}
+
+input, textarea, select {
+  padding: 0.8rem 1.4rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  resize: none;
+  color: var(--royal-purple-dark);
+  border: none;
+}
